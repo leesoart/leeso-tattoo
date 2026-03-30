@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--white:#ffffff;--black:#111111;--gray:#888;--light:#f7f6f4;--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Jost',sans-serif}
+:root{--white:#ffffff;--black:#111111;--gray:#666;--light:#f7f6f4;--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Jost',sans-serif}
 html{scroll-behavior:smooth}
 body{font-family:var(--font-sans);background:var(--white);color:var(--black);font-weight:300;letter-spacing:.02em;overflow-x:hidden}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.5rem 3rem;background:rgba(255,255,255,0.92);backdrop-filter:blur(8px);border-bottom:.5px solid rgba(0,0,0,.08)}
@@ -40,7 +40,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 #about{padding:6rem 3rem;background:var(--light)}
 .about-inner{max-width:680px;margin:0 auto}
 .about-name{font-family:var(--font-serif);font-size:2.8rem;font-weight:300;font-style:italic;margin-bottom:2rem}
-.about-text{font-size:1rem;line-height:1.9;color:#444}
+.about-text{font-size:1rem;line-height:1.9;color:#222}
 .about-text p+p{margin-top:1.2rem}
 .about-links{margin-top:2.5rem;display:flex;gap:2rem;flex-wrap:wrap}
 .about-links a{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--black);text-decoration:none;transition:color .2s,border-color .2s}
@@ -49,11 +49,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .policies-grid{max-width:820px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem 4rem}
 @media(max-width:640px){.policies-grid{grid-template-columns:1fr}}
 .policy-block h3{font-family:var(--font-serif);font-size:1.35rem;font-weight:400;font-style:italic;margin-bottom:.9rem;color:var(--black)}
-.policy-block p{font-size:1rem;line-height:1.85;color:#555}
+.policy-block p{font-size:1rem;line-height:1.85;color:#333}
 #booking{padding:6rem 3rem;background:var(--light);text-align:center}
 .booking-inner{max-width:520px;margin:0 auto}
 .booking-title{font-family:var(--font-serif);font-size:2.5rem;font-weight:300;font-style:italic;margin-bottom:1.5rem}
-.booking-text{font-size:1rem;line-height:1.9;color:#555;margin-bottom:2.5rem}
+.booking-text{font-size:1rem;line-height:1.9;color:#333;margin-bottom:2.5rem}
 .booking-cta{display:inline-block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--white);background:var(--black);text-decoration:none;padding:1rem 2.5rem;transition:background .2s}
 .booking-cta:hover{background:#444}
 .booking-contacts{margin-top:2.5rem;display:flex;gap:2rem;justify-content:center;flex-wrap:wrap}
@@ -135,7 +135,7 @@ footer p{font-size:.68rem;letter-spacing:.1em;color:#bbb;text-transform:uppercas
     <div class="about-links">
       <a href="https://instagram.com/leeso_tattoo" target="_blank">Instagram</a>
       <a href="https://facebook.com/leesotattooer" target="_blank">Facebook</a>
-      <a href="/cdn-cgi/l/email-protection#b3dfd6d6c0dcd2c1c78bf3d4ded2dadf9dd0dcde">Email</a>
+      <a href="mailto:leesoart8@gmail.com">Email</a>
     </div>
   </div>
 </section>
@@ -187,12 +187,12 @@ footer p{font-size:.68rem;letter-spacing:.1em;color:#bbb;text-transform:uppercas
       </div>
       <div style="margin-bottom:1.8rem">
         <label style="display:block;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#111;margin-bottom:.5rem">Design concept, subject, style &amp; colour preference</label>
-        <p style="font-size:.88rem;color:#777;margin-bottom:.8rem;line-height:1.7">Please describe the tattoo you would like in as much detail as possible. Reference images are highly appreciated.</p>
+        <p style="font-size:.88rem;color:#555;margin-bottom:.8rem;line-height:1.7">Please describe the tattoo you would like in as much detail as possible. Reference images are highly appreciated.</p>
         <textarea name="design" rows="5" required style="width:100%;border:none;border-bottom:1px solid #bbb;padding:.6rem 0;font-family:'Jost',sans-serif;font-size:.95rem;font-weight:300;outline:none;background:transparent;resize:none"></textarea>
       </div>
       <div style="margin-bottom:1.8rem">
         <label style="display:block;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#111;margin-bottom:.5rem">Placement</label>
-        <p style="font-size:.88rem;color:#777;margin-bottom:.8rem;line-height:1.7">Placements where ink tends to fade or blur easily, such as fingers, are generally not recommended. Certain difficult placements may require an additional fee. You can finalise the placement on the appointment day after placing the printed stencil on your body.</p>
+        <p style="font-size:.88rem;color:#555;margin-bottom:.8rem;line-height:1.7">Placements where ink tends to fade or blur easily, such as fingers, are generally not recommended. Certain difficult placements may require an additional fee. You can finalise the placement on the appointment day after placing the printed stencil on your body.</p>
         <input type="text" name="placement" required style="width:100%;border:none;border-bottom:1px solid #bbb;padding:.6rem 0;font-family:'Jost',sans-serif;font-size:1.1rem;font-weight:300;outline:none;background:transparent;color:#111;padding:.8rem 0">
       </div>
       <div style="margin-bottom:1.8rem">
@@ -201,16 +201,11 @@ footer p{font-size:.68rem;letter-spacing:.1em;color:#bbb;text-transform:uppercas
       </div>
       <div style="margin-bottom:2.5rem">
         <label style="display:block;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#111;margin-bottom:.5rem">Preferred date or date range</label>
-        <p style="font-size:.88rem;color:#777;margin-bottom:.8rem;line-height:1.7">Please share your preferred dates and time range so I can check my availability.</p>
+        <p style="font-size:.88rem;color:#555;margin-bottom:.8rem;line-height:1.7">Please share your preferred dates and time range so I can check my availability.</p>
         <input type="text" name="dates" required style="width:100%;border:none;border-bottom:1px solid #bbb;padding:.6rem 0;font-family:'Jost',sans-serif;font-size:1.1rem;font-weight:300;outline:none;background:transparent;color:#111;padding:.8rem 0">
       </div>
       <button type="submit" class="booking-cta" style="border:none;cursor:pointer">Send Inquiry</button>
     </form>
-    <div class="booking-contacts" style="margin-top:2.5rem">
-      <a href="https://instagram.com/leeso_tattoo" target="_blank">Instagram</a>
-      <a href="https://facebook.com/leesotattooer" target="_blank">Facebook</a>
-      <a href="/cdn-cgi/l/email-protection#076b626274686675733f47606a666e6b2964686a">Email</a>
-    </div>
   </div>
 </section>
 <section id="archive">
@@ -221,7 +216,11 @@ footer p{font-size:.68rem;letter-spacing:.1em;color:#bbb;text-transform:uppercas
 </section>
 <footer>
   <p>© 2025 Leeso Tattoo · Seoul</p>
-  <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2e424b4b5d414f5c5a166e49434f4742004d4143">[email&#160;protected]</a></p>
+  <div style="display:flex;gap:2rem">
+    <a href="https://instagram.com/leeso_tattoo" target="_blank" style="font-size:.68rem;letter-spacing:.1em;color:#bbb;text-transform:uppercase;text-decoration:none;transition:color .2s">Instagram</a>
+    <a href="https://facebook.com/leesotattooer" target="_blank" style="font-size:.68rem;letter-spacing:.1em;color:#bbb;text-transform:uppercase;text-decoration:none;transition:color .2s">Facebook</a>
+    <a href="mailto:leesoart8@gmail.com" style="font-size:.68rem;letter-spacing:.1em;color:#bbb;text-transform:uppercase;text-decoration:none;transition:color .2s">Email</a>
+  </div>
 </footer>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const gallery = document.getElementById('gallery');
