@@ -18,7 +18,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:9999;display:flex;align-items:ce
 .nav-links{display:flex;gap:2.5rem;list-style:none}
 .nav-links a{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#333;transition:color .2s}
 .nav-links a:hover{color:var(--black)}
-@media(max-width:640px){nav{padding:1.5rem 1.5rem}#menu-btn{display:flex!important}.nav-desktop{display:none!important}.nav-mobile{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#ffffff;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;z-index:9999;list-style:none}.nav-mobile.open{display:flex}.nav-mobile a{font-size:1rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#333}}
+#mobile-menu{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;z-index:99999;list-style:none;margin:0;padding:0}
+#mobile-menu.open{display:flex}
+#mobile-menu a{font-size:1.1rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#333}
+@media(max-width:640px){nav{padding:1.5rem 1.5rem}#menu-btn{display:flex!important}.nav-links{display:none!important}}
 #home{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:7rem 3rem 4rem;text-align:center}
 .hero-title{font-family:var(--font-serif);font-size:clamp(3.5rem,9vw,8rem);font-weight:300;line-height:.95;letter-spacing:-.01em;margin-bottom:1.5rem}
 .hero-sub{font-size:.78rem;letter-spacing:.14em;color:var(--gray);text-transform:uppercase}
@@ -76,7 +79,7 @@ footer p{font-size:.78rem;letter-spacing:.1em;color:#666;text-transform:uppercas
     <span style="display:block;width:22px;height:1px;background:#111"></span>
     <span style="display:block;width:22px;height:1px;background:#111"></span>
   </button>
-  <ul class="nav-links nav-mobile" id="nav-links" style="display:none">
+  <ul class="nav-links">
     <li><a href="#portfolio">Works</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#policies">Policies</a></li>
@@ -84,7 +87,7 @@ footer p{font-size:.78rem;letter-spacing:.1em;color:#666;text-transform:uppercas
     <li><a href="#archive">Archive</a></li>
   </ul>
 </nav>
-<ul class="nav-links nav-mobile" id="nav-links">
+<ul id="mobile-menu">
   <li><a href="#portfolio" onclick="closeMenu()">Works</a></li>
   <li><a href="#about" onclick="closeMenu()">About</a></li>
   <li><a href="#policies" onclick="closeMenu()">Policies</a></li>
@@ -224,13 +227,13 @@ My response times can be irregular — please feel free to reach out anytime, an
 </footer>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const menuBtn = document.getElementById('menu-btn');
-const navLinks = document.getElementById('nav-links');
+const mobileMenu = document.getElementById('mobile-menu');
 menuBtn.addEventListener('click', function() {
-  navLinks.classList.toggle('open');
-  document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+  mobileMenu.classList.toggle('open');
+  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
 });
 function closeMenu() {
-  navLinks.classList.remove('open');
+  mobileMenu.classList.remove('open');
   document.body.style.overflow = '';
 }
 const gallery = document.getElementById('gallery');
