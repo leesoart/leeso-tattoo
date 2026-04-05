@@ -21,7 +21,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:9999;display:flex;align-items:ce
 #mobile-menu{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;z-index:99999;list-style:none;margin:0;padding:0}
 #mobile-menu.open{display:flex}
 #mobile-menu a{font-size:1.1rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#333}
-@media(max-width:640px){nav{padding:1.5rem 1.5rem}#menu-btn{display:flex!important}.nav-links{display:none!important}}
+#menu-btn{display:none}
+@media(max-width:640px){nav{padding:1.5rem 1.5rem}#menu-btn{display:flex}.nav-links{display:none!important}}
 #home{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:7rem 3rem 4rem;text-align:center}
 .hero-title{font-family:var(--font-serif);font-size:clamp(3.5rem,9vw,8rem);font-weight:300;line-height:.95;letter-spacing:-.01em;margin-bottom:1.5rem}
 .hero-sub{font-size:.78rem;letter-spacing:.14em;color:var(--gray);text-transform:uppercase}
@@ -74,7 +75,7 @@ footer p{font-size:.78rem;letter-spacing:.1em;color:#666;text-transform:uppercas
 <body>
 <nav>
   <a href="#home" class="nav-logo">Leeso</a>
-  <button id="menu-btn" style="display:none;background:none;border:none;cursor:pointer;padding:0;flex-direction:column;gap:5px" aria-label="Menu">
+  <button id="menu-btn" style="background:none;border:none;cursor:pointer;padding:4px;flex-direction:column;gap:5px;touch-action:manipulation;-webkit-tap-highlight-color:transparent" aria-label="Menu">
     <span style="display:block;width:22px;height:1px;background:#111"></span>
     <span style="display:block;width:22px;height:1px;background:#111"></span>
     <span style="display:block;width:22px;height:1px;background:#111"></span>
@@ -225,7 +226,7 @@ My response times can be irregular — please feel free to reach out anytime, an
     <a href="/cdn-cgi/l/email-protection#a5c9c0c0d6cac4d7d19de5c2c8c4ccc98bc6cac8" style="font-size:1.3rem;color:#111;text-decoration:none;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic"><span class="__cf_email__" data-cfemail="64080101170b0516105c240309050d084a070b09">[email&#160;protected]</span></a>
   </div>
 </footer>
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const menuBtn = document.getElementById('menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 menuBtn.addEventListener('click', function() {
